@@ -120,7 +120,7 @@ to_json_array() {
 # compiles all the objects to an executable
 # no arguments needed
 objs2exec() {
-    local CMD="$CC -o $EXEC $OBJ/*.o $CFLAGS $LIBS"
+    local CMD="$CC -o $EXEC $OBJ/*.o $CFLAGS $LFLAGS"
     echo $CMD
     $CMD
 }
